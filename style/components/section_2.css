@@ -1,0 +1,41 @@
+.section_2{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 100px;
+}
+
+.section_2 h3{
+    font-size: 28px;
+    color: #000;
+    transition: .3s
+}
+
+.section_2 a{
+    font-size: 14px;
+    color: #000;
+    transition: .3s;
+    padding: 0 30px;
+}
+
+.section_2 a:active h3{
+    color: #03A9F4;
+}
+
+.section_2 a:active{
+    color: #E65100;
+}
+
+@media(max-width:872px){
+    .section_2{
+        display: none;
+    }
+}
+
+@media(max-width:1020px){
+    .section_2 h3{
+        font-size: 20px;
+    }
+    .section_2 a{
+        font-size: 10px;
+    }
+}

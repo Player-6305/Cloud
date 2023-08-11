@@ -1,0 +1,133 @@
+.section_6{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.top6{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom6{
+    display: flex;
+    margin-top: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.text6{
+    width: 50%;
+    margin-left: 10%;
+}
+
+.text6 h5{
+    color: #01579B;
+    font-size: 16px;
+}
+
+.text6 h2{
+    font-size: 36px;
+    line-height: 56px;
+}
+
+.text6 p{
+    font-size: 22px;
+    font-family: "Montserrat regular";
+    line-height: 32px;
+    margin: 30px 0;
+}
+
+.top6 img{
+    height: 400px;
+}
+
+.bottom6 img{
+    width:400px;
+}
+
+.text6 button{
+    color: #fff;
+    background-color: #03a9f4;
+    box-shadow: 0 0 4px -1px #03a9f4;
+    padding: 0 16px;
+    height: 36px;
+    border-radius: 6px;
+    border: 0;
+    font-size: 14px;
+    transition: .3s;
+    font-family: "Montserrat";
+}
+
+.text6:hover button{
+    background-color: #11aef5;
+    cursor: pointer;
+}
+
+.text6.bot{
+    text-align: right;
+    margin-left: 0;
+    margin-right: 10%;
+}
+
+.divider{
+    display: flex;
+    justify-content: center;
+    width: 100%
+}
+
+.div_left, .div_right{
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    height: 8px;
+    margin-top: 100px;
+}
+
+.div_left{
+    width: 7%;
+    max-width: 90px;
+}
+
+.div_right{
+    width: 2%;
+    margin-left: 5px;
+    max-width: 20px;
+}
+
+.bottom6{
+    margin-bottom: 75px;
+}
+
+@media(max-width:960px){
+    .bottom6{
+        flex-wrap: wrap;
+    }
+    .top6{
+        flex-wrap: wrap-reverse;
+    }
+    .text6, .text6.bot{
+        text-align: center;
+        margin: 0;
+        width: 100%;
+    }
+    .top6 img, .bottom6 img{
+        margin-top: 20px;
+    }
+}
+
+@media(max-width:599px){
+    .text6 h2{
+        font-size: 24px;
+        line-height: 40px;
+    }
+    .text6 h5{
+        font-size: 14px;
+    }
+    .text6 p{
+        font-size: 16px;
+        margin-top: 10px;
+        line-height: 24px;
+    }
+}

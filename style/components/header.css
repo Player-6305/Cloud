@@ -1,0 +1,147 @@
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 1px 36px -16px #03A9F4;
+    z-index: 10;
+    position: relative;
+    position: fixed;
+}
+
+.header__item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__item:nth-child(2){
+    margin-left: 250px;
+}
+
+.logo{
+    font-size: 26px;
+    color: #000000DE;
+    display: flex;
+    align-items: center;
+}
+
+.logo a{
+    color: #1c1f21;
+}
+
+.logo img{
+    margin-right: 16px;
+    width: 48px;
+}
+
+.list{
+    padding-left: 20px;
+}
+
+.list a{
+    font-size: 16px;
+    margin: 0 8px;
+    border-radius: 4px;
+    padding: 8px;
+    color: #1c1f21;
+    transition: .3s;
+}
+
+.list button{
+    font-size: 16px !important;
+    margin: 0 8px;
+    border-radius: 4px;
+    padding: 8px;
+    color: #1c1f21;
+    transition: .3s;
+    background-color: transparent;
+    cursor: pointer;
+    text-transform: capitalize !important;
+}
+
+.list a:hover{
+    background-color: #0000000b;
+}
+
+.list button:hover{
+    background-color: #0000000b;
+}
+
+.header__item button{
+    text-transform: uppercase;
+    padding: 0 16px;
+    height: 36px;
+    border-radius: 6px;
+    border: 0;
+    font-size: 14px;
+    transition: .3s;
+    font-family: "Montserrat";
+}
+
+.login{
+    background-color: transparent;
+}
+
+.login:hover{
+    background-color: #bfd5df;
+    cursor: pointer;
+}
+
+.register{
+    color: #fff;
+    background-color: #03a9f4;
+    box-shadow: 0 0 4px -1px #03a9f4;
+}
+
+.register:hover{
+    background-color: #11aef5;
+    cursor: pointer;
+}
+
+.line{
+    height: 40px;
+    border: solid #bfd5df .2px;
+    margin: 0 20px;
+}
+
+.settings{
+    margin: 4px;
+    cursor: pointer;
+}
+
+.logo i{
+    display: none;
+}
+
+
+
+@media(max-width:1358px){
+    .list{
+        display: none;
+    }
+    .logo i{
+        display: block;
+        margin-right: 10px;
+    }
+    .header{
+        justify-content: space-between;
+        padding: 20px 30px;
+    }
+    .header__item:nth-child(2){
+        margin-left: 0;
+    }
+    .line{
+        display: none;
+    }
+    .settings{
+        margin-left: 20px;
+    }
+}
+
+@media(max-width:537px){
+    .login, .register{
+        display: none;
+    }
+}

@@ -1,0 +1,124 @@
+.section_10{
+    margin-top: 150px;
+    text-align: center;
+}
+
+.section_10 h5{
+    font-size: 16px;
+    color: #01579B;
+    line-height: 1.5;
+}
+
+.section_10 h2{
+    font-size: 36px;
+    line-height: 1.5;
+    line-height: 56px;
+    margin-bottom: 24px;
+}
+
+.staff{
+    display: flex;
+    padding: 0 64px;
+    justify-content: center;
+    position: relative;
+}
+
+.staff_items{
+    width: 100%;
+}
+
+.staff_item{
+    text-align: left;
+    width: 528px;
+    border: 3px solid #B3E5FC;
+    border-radius: 8px;
+    padding: 64px 64px 20px 64px;
+    margin: 56px 8px 0;
+    position: relative;
+}
+
+.staff_item:last-child p{
+    margin-bottom: 40px;
+}
+
+.staff_item p{
+    font-family: "Montserrat regular";
+    font-size: 16px;
+    margin-bottom: 60px;
+    line-height: 24px;
+}
+
+.staff_item h4{
+    color: #01579B;
+    font-size: 1.15rem;
+    line-height: 1.65;
+}
+
+.staff_item h6{
+    font-family: "Montserrat regular";
+    font-size: 12px;
+    margin-bottom: 16px;
+}
+
+.icon-quote{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #03A9F4;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    top: -20%;
+    left: 5%;
+}
+
+.icon-quote i{
+    background: linear-gradient(#B3E5FC,#03A9F4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.staff>i{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.38);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 48px;
+}
+
+#prevArrow_10{
+    left: -10px;
+}
+#nextArrow_10{
+    right: -10px;
+}
+
+@media(max-width:1000px){
+    .staff_item:last-child{
+        display: none;
+    }
+    .staff_item{
+        width: 100%;
+    }
+}
+
+@media(max-width:600px){
+    .section_10 h2{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .section_10 h5{
+        font-size: 14px;
+    }
+    .staff{
+        padding: 0;
+    }
+}
